@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858641504005",
+    "project_id": "home-management-f8b04",
+    "storage_bucket": "home-management-f8b04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858641504005:android:72118d6dce8b0c318a896c",
+        "android_client_info": {
+          "package_name": "com.shuvo6904.home_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACw_4eL7e5MU-2-vd4uZMXKTQ3ztDbb94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
