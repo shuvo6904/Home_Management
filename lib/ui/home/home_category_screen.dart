@@ -1,7 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:home_management/ui/home/add_home_category_screen.dart';
+import 'add_home_category_screen.dart';
+import 'add_renter_info_screen.dart';
 
 class HomeCategoryScreen extends StatefulWidget {
   final String itemName;
@@ -71,16 +72,17 @@ class _HomeCategoryScreenState extends State<HomeCategoryScreen> {
                               child: InkWell(
                                 borderRadius: BorderRadius.circular(8.0),
                                 onTap: () {
-                                  /*Navigator.push(
+                                  Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              HomeCategoryScreen(
+                                              AddRenterInfoScreen(
                                                 itemName: list[index]
                                                     ['categoryName'],
                                                 itemId: list[index]
                                                     ['id'], // Pass the ID here
-                                              )));*/
+                                              )));
+
                                 },
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
