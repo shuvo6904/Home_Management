@@ -22,14 +22,12 @@ class _AddHomeCategoryScreenState extends State<AddHomeCategoryScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     databaseRef = FirebaseDatabase.instance.ref(widget.itemId);
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     homeCategoryNameController.dispose();
   }

@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:home_management/ui/home/room_screen.dart';
 import 'add_home_category_screen.dart';
-import 'add_renter_info_screen.dart';
 
 class HomeCategoryScreen extends StatefulWidget {
   final String itemName;
@@ -21,7 +21,6 @@ class _HomeCategoryScreenState extends State<HomeCategoryScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     databaseRef = FirebaseDatabase.instance.ref(widget.itemId);
   }
@@ -76,7 +75,7 @@ class _HomeCategoryScreenState extends State<HomeCategoryScreen> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              AddRenterInfoScreen(
+                                              RoomScreen(
                                                 itemName: list[index]
                                                     ['categoryName'],
                                                 itemId: list[index]
